@@ -9,6 +9,7 @@ class Event(BaseModel):
     start_time: datetime
     end_time: datetime
     location: Optional[str] = None
+    imagen: Optional[str] = None  # URL de la imagen
 
     class Config:
         validate_by_name = True
